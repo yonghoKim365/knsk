@@ -19,7 +19,7 @@ function is_checked()
     let attend_str = "";
     let cnt = 0
     for (i = 0; i < listItems.length; i++) {
-        console.log(listItems[i].getElementsByTagName("input")[0].checked);
+        //console.log(listItems[i].getElementsByTagName("input")[0].checked);
         //console.log(listItems[i].getElementsByClassName("name")[0].innerText)
         if(listItems[i].getElementsByTagName("input")[0].checked) {
             cnt++;
@@ -31,4 +31,11 @@ function is_checked()
         attend_str += "+ 관장님"
     }
     document.getElementById("result-area").innerText = attend_str;
+}
+
+ function copy() {
+    var tempElem = document.getElementById("result-area");
+    tempElem.select();
+    document.execCommand("Copy")
+    //navigator.clipboard.writeText(tempElem);
 }

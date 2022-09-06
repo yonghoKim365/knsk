@@ -14,14 +14,12 @@
         <!-- 회원 -->
         <ul id = "attend">
             <li>
-                <div class="name">구인회</div>
-                <input type="radio" name="chk_info" value="출석">출석
-                <input type="radio" name="chk_info" value="결석" checked="checked">결석
+                <span class="name">구인회</span>                
+                <input type="checkbox" name="chk_info" value="출석" onclick="is_checked()">출석                
             </li>
             <li>
-                <div class="name">백 찬</div>
-                <input type="radio" name="chk_info" value="출석">출석
-                <input type="radio" name="chk_info" value="결석" checked="checked">결석
+                <span class="name">백 찬</span>
+                <input type="checkbox" name="chk_info" value="출석" onclick="is_checked()">출석
             </li>
         </ul>
     </div>
@@ -30,8 +28,7 @@
         <ul>
             <li>
                 관장님
-                <input type="radio" name="chk_info" value="출석">출석
-                <input type="radio" name="chk_info" value="결석" checked="checked">결석
+                <input id = "kancho" type="checkbox" name="chk_info" value="출석" onclick="is_checked()">출석
             </li>
         </ul>
     </div>

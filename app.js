@@ -14,7 +14,7 @@ const listItems = document.getElementById("attend").getElementsByTagName("li");
 // console.log(listItems);
 
 function is_checked() {
-  let attend_str = date_str + ` 아침 출석현황입니다. \n`;
+  let attend_str = date_str + ` 아침 출석현황입니다. &#10;&#10;`;
   let cnt = 0;
   for (i = 0; i < listItems.length; i++) {
     //console.log(listItems[i].getElementsByTagName("input")[0].checked);
@@ -30,9 +30,9 @@ function is_checked() {
     attend_str += "+ 관장님";
   }
 
-  attend_str += "https://chanbaek7th.github.io/knsk";
+  attend_str += "&#10;https://chanbaek7th.github.io/knsk";
 
-  document.getElementById("result-area").innerText = attend_str;
+  document.getElementById("result-area").innerHTML = attend_str;
 }
 
 function copy() {

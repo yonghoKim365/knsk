@@ -36,9 +36,9 @@ function is_checked() {
 }
 
 function copy() {
-  var tempElem = document.getElementById("result-area");
-  tempElem.select();
-  document.execCommand("Copy");
+  // var tempElem = document.getElementById("result-area");
+  // tempElem.select();
+  // document.execCommand("Copy");
 
-  //navigator.clipboard.writeText(tempElem);
+  window.navigator.clipboard.writeText(document.getElementById("result-area").value);
 }

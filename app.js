@@ -27,7 +27,7 @@ function is_checked() {
   }
   attend_str += "(이상 " + cnt + "명)";
   if (document.getElementById("kancho").checked) {
-    attend_str += "+ 관장님";
+    attend_str += " + 관장님";
   }
 
   attend_str += "&#10;https://chanbaek7th.github.io/knsk";

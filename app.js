@@ -25,6 +25,7 @@ function is_checked() {
         listItems[i].getElementsByClassName("name")[0].innerText + ", ";
     }
   }
+  attend_str = attend_str.replace(/,\s*$/, "");
   attend_str += "(이상 " + cnt + "명)";
   if (document.getElementById("kancho").checked) {
     attend_str += " + 관장님";

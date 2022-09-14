@@ -41,5 +41,9 @@ function copy() {
   // tempElem.select();
   // document.execCommand("Copy");
 
-  window.navigator.clipboard.writeText(document.getElementById("result-area").value);
+  window.navigator.clipboard.writeText(document.getElementById("result-area").value).then(() => {
+    // 복사가 완료되면 이 부분이 호출된다.
+    alert("복사가 완료되었습니다.");
+  });
+  
 }
